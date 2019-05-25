@@ -12,10 +12,10 @@ b = int(input("Введите вторую сторону треугольник
 c = int(input("Введите третью сторону треугольника"))
 
 if a > 0 or b > 0 or c > 0:
-    if (a > (b + c)) or (b > (a + c)) or (c > (a + b)):
-        if a == b and a == c:
+    if ((b + c) > a) or ((a + c) > b) or ((a + b) > c):
+        if a == b and a == c and b == c:
             print("Треугольник равносторонний")
-        elif a == b or a == c:
+        elif a == b or a == c or b == c:
             print("Треугольник равнобедренный")
         else:
             print("Треугольник разносторонний")
